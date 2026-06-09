@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://vercelcn.com/ads-widget.js"></script>
+  <title>搜索 - 精选欧美电影</title>
+  <meta name="description" content="搜索精选欧美电影片库中的影片标题、地区、年份、类型和标签。">
+  <meta name="keywords" content="精选欧美电影,欧美电影,高分电影,电影排行榜,热门内容,精选影片,持续更新">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="brand" href="./index.html" aria-label="精选欧美电影">
+      <span class="brand-mark">影</span>
+      <span class="brand-text">
+        <strong>精选欧美电影</strong>
+        <small>高分电影排行榜</small>
+      </span>
+    </a>
+    <nav class="main-nav" id="mainNav">
+        <a class="nav-link" href="./index.html">首页</a>
+        <a class="nav-link" href="./categories.html">分类</a>
+        <a class="nav-link" href="./rank.html">热播榜</a>
+        <a class="nav-link" href="./movie-index.html">片库索引</a>
+    </nav>
+    <form class="header-search" action="./search.html" method="get">
+      <input type="search" name="q" placeholder="搜索影片、年份、类型" aria-label="搜索影片">
+      <button type="submit">搜索</button>
+    </form>
+    <button class="menu-toggle" type="button" data-menu-toggle aria-label="打开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
+
+<main class="page-main">
+  <section class="container page-hero compact-hero">
+    <span class="eyebrow">Search</span>
+    <h1>影片搜索</h1>
+    <p>输入关键词查找影片标题、年份、地区、类型或标签。</p>
+    <form class="search-page-form" action="search.html" method="get">
+      <input type="search" name="q" id="searchInput" placeholder="例如：2025、惊悚、美国、爱情">
+      <button type="submit">搜索</button>
+    </form>
+  </section>
+  <section class="container section-block">
+    <div class="section-heading">
+      <div>
+        <h2>搜索结果</h2>
+        <p id="searchSummary">请输入关键词开始搜索。</p>
+      </div>
+    </div>
+    <div class="movie-grid" id="searchResults"></div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="footer-brand">精选欧美电影</div>
+      <p>精选欧美电影栏目适合展示高分片单、热门影片和持续更新的分类内容。</p>
+    </div>
+    <div>
+      <h3>快捷入口</h3>
+      <div class="footer-links">
+        <a href="./index.html">首页</a>
+        <a href="./categories.html">分类</a>
+        <a href="./rank.html">热播榜</a>
+        <a href="./movie-index.html">片库索引</a>
+      </div>
+    </div>
+    <div>
+      <h3>热门分类</h3>
+      <div class="footer-links">
+        <a href="./categories/selected-europe-america.html">精选欧美电影</a>
+        <a href="./categories/high-score-movies.html">高分电影榜</a>
+        <a href="./categories/hot-updates.html">热门更新</a>
+        <a href="./categories/suspense-thriller.html">悬疑惊悚</a>
+        <a href="./categories/action-adventure.html">动作冒险</a>
+        <a href="./categories/sci-fi-fantasy.html">科幻奇幻</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./assets/js/movies-search.js"></script>
+<script src="./assets/js/site.js"></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?76b5e2e0f6c84c06f0a7cb7105df054d";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
